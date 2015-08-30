@@ -47,13 +47,6 @@
 - Mocha + Sinon + Chai
 - Express
 
-## Chapters
-### 1. Your Ionic app in 30 minutes
-- Goal: Hello World
-- Platform: Android + Ionic Serve
-- Technos: [ionic CLI]
-### 2.
-
 ## Annexes
 1. Setting the environment for Ionic
 2. Using Atom
