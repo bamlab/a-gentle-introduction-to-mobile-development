@@ -1,3 +1,5 @@
-# Your Ionic app in 30 minutes
+# Chapter 1: Your Ionic app in 30 minutes
 
-GitBook allows you to organize your book into chapters, each chapter is stored in a separate file like this one.
+- Goal: Hello World
+- Platform: Android + Ionic Serve
+- Technos: [ionic CLI]
