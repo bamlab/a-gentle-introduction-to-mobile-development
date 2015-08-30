@@ -1,3 +1,3 @@
 # Summary
 
-* [First Chapter](chapter1.md)
+* [Your ionic App in 30 minutes](chapter1.md)
