@@ -11,7 +11,7 @@
     * Chapter 2: Your first page
         * Goal: Use basic ionic classes to shape your page
     * Chapter 3: Navigating
-        * 
+        * Multiple pages + multiple files
     * Chapter 4: 
 
 ## Part 2 - Staying commited
