@@ -40,6 +40,7 @@
     * Pure css
     * Introduce the way ionic handles styling
     * Introduce BEM !
+    * Please use the title "BEM me up Scotty"
 
 ## Part 5 - Can we build it? Yes we can!
 * Notes:
@@ -84,6 +85,8 @@
     * iOS guidelines
     * Build some pages
     * Use this to start creating a real app
+
+## Part 10 - 
 
 ## Annexes
 * Useful tools
