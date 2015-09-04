@@ -37,15 +37,24 @@
         * Pure css
         * Introduce the way ionic handles styling
         * Introduce BEM !
-* Part 5 - Let's get organized
+* Part 5 - Tidying up
     * Notes
         * Gulp only
         * Pure js
         * Code organizing
-* Part 6 - TypeScript (find a cool name)
+* Part 6 - TypeScript (find a cool chapter name)
     * Notes
         * Introduce Typescript
-        * 
+        * (What annoys me is having to write gulp in pure js)
+        * Modify Gulp
+        * How Typescript affects angular
+        * Quickly go back through our Ctrl, Directives, ...
+* Part 7 - Going Sassy
+    * Notes
+        * Introduce Sass
+        * Do some cool shit with it
+        * Modify our files and css organization
+* Part 8 - 
 * Annexes
     * Useful tools
     * Links
