@@ -47,6 +47,7 @@
     * Code signing
     * Release for iOS and Android
     * Crosswalk?
+    * Hooks?
 
 ## Part 6 - Tidying up
 * Notes:
