@@ -54,7 +54,11 @@
         * Introduce Sass
         * Do some cool shit with it
         * Modify our files and css organization
-* Part 8 - 
+* Part 8 - The good, the bad and the UX
+    * Notes
+        * Talk UX
+        * Android guidelines
+        * iOS guidelines
 * Annexes
     * Useful tools
     * Links
