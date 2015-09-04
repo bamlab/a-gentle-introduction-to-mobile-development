@@ -41,13 +41,20 @@
     * Introduce the way ionic handles styling
     * Introduce BEM !
 
-## Part 5 - Tidying up
-* Notes
+## Part 5 - Can we build it? Yes we can!
+* Notes:
+    * Build the project
+    * Code signing
+    * Release for iOS and Android
+
+## Part 6 - Tidying up
+* Notes:
     * Gulp only
     * Pure js
     * Code organizing
+    * Environments
 
-## Part 6 - TypeScript (find a cool chapter name)
+## Part 7 - TypeScript (find a cool chapter name)
 * Notes
     * Introduce Typescript
     * (What annoys me is having to write gulp in pure js)
@@ -55,19 +62,19 @@
     * How Typescript affects angular
     * Quickly go back through our Ctrl, Directives, ...
 
-## Part 7 - Going Sassy
+## Part 8 - Going Sassy
 * Notes
     * Introduce Sass
     * Do some cool shit with it
     * Modify our files and css organization
 
-## Part 8 - The good, the bad and the UX
+## Part 9 - The good, the bad and the UX
 * Notes
     * Talk UX
     * Android guidelines
     * iOS guidelines
 
-## Part 9 - 1, 2, Testing
+## Part 10 - 1, 2, Testing
 * Notes:
     * Get some unit tests running
     * TDD
