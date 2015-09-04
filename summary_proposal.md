@@ -19,7 +19,7 @@
         * Introduce versioning in projects
         * Introduce PRs
         * Why now? The earliest the better
-* Part 2 - Turning it up with Angular:
+* Part 3 - Turning it up with Angular:
     * Notes:
         * Pure js
         * Introduce core Angular concepts
@@ -32,16 +32,20 @@
         * Chapter 3: Filters
         * Chapter 4: Providers
         * Chapter 5: Directives
-* Part 3 - Getting fancy
+* Part 4 - Getting fancy
     * Notes:
         * Pure css
         * Introduce the way ionic handles styling
         * Introduce BEM !
-* Part 4 - Let's get organized
+* Part 5 - Let's get organized
     * Notes
         * Gulp only
         * Pure js
         * Code organizing
+* Part 6 - TypeScript (find a cool name)
+    * Notes
+        * Introduce Typescript
+        * 
 * Annexes
     * Useful tools
     * Links
