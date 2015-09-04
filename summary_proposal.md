@@ -81,6 +81,8 @@
     * Talk UX
     * Android guidelines
     * iOS guidelines
+    * Build some pages
+    * Use this to start creating a real app
 
 ## Annexes
 * Useful tools
