@@ -46,6 +46,7 @@
     * Build the project
     * Code signing
     * Release for iOS and Android
+    * Crosswalk?
 
 ## Part 6 - Tidying up
 * Notes:
@@ -68,17 +69,18 @@
     * Do some cool shit with it
     * Modify our files and css organization
 
-## Part 9 - The good, the bad and the UX
-* Notes
-    * Talk UX
-    * Android guidelines
-    * iOS guidelines
 
 ## Part 10 - 1, 2, Testing
 * Notes:
     * Get some unit tests running
     * TDD
-    * 
+    * I believe now is a good time to introduce testing as we have implemented TypeScript
+
+## Part 9 - The good, the bad and the UX
+* Notes
+    * Talk UX
+    * Android guidelines
+    * iOS guidelines
 
 ## Annexes
 * Useful tools
