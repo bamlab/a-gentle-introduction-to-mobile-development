@@ -7,5 +7,6 @@
     * Chapter 3: Getting some data in (proposal)
     * Chapter 4: 
 * Part 2:
+    * Chapter X: ....
 * Annexes
     * Useful tools
