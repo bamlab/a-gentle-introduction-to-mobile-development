@@ -78,15 +78,22 @@
     * TDD
     * I believe now is a good time to introduce testing as we have implemented TypeScript
 
-## Part 9 - The good, the bad and the UX
+## Part 11 - Continuous Integration (find title)
 * Notes
+    * Explore continuous integration
+    * Jenkins? Circle CI? Travis?
+
+## Part 9 - The good, the bad and the UX
+* Notes:
     * Talk UX
     * Android guidelines
     * iOS guidelines
     * Build some pages
-    * Use this to start creating a real app
+    * Use this to start creating a real app by layouting the structure
 
-## Part 10 - 
+## Part 10 - Getting RESTless
+* Notes:
+    * Add Some Data and transform into a cool app
 
 ## Annexes
 * Useful tools
