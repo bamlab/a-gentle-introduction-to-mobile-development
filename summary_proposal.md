@@ -83,7 +83,7 @@
     * Explore continuous integration
     * Jenkins? Circle CI? Travis?
 
-## Part 9 - The good, the bad and the UX
+## Part 12 - The good, the bad and the UX
 * Notes:
     * Talk UX
     * Android guidelines
@@ -91,9 +91,16 @@
     * Build some pages
     * Use this to start creating a real app by layouting the structure
 
-## Part 10 - Getting RESTless
+## Part 13 - Hooked on Plugins
+* Notes:
+    * Introduce plugins
+    * Add a few plugins and use ng-cordova
+    * Should we put hooks here?
+
+## Part 14 - Getting RESTless
 * Notes:
     * Add Some Data and transform into a cool app
+    * Those last 3 chapters are where we will build most of our app
 
 ## Annexes
 * Useful tools
