@@ -30,9 +30,10 @@
 - Création et intégration de plugin Cordova
 - Debug
 - API
+- OAuth
 - Performances
 - Hybrid/Native [Advanced]
-- Certificates
+
 
 ## Technos
 - TypeScript
@@ -46,6 +47,7 @@
 - CircleCI
 - Mocha + Sinon + Chai
 - Express
+- Sass
 
 ## Annexes
 1. Setting the environment for Ionic
