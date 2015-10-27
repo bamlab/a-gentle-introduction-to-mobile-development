@@ -1,7 +1,7 @@
 # A Gentle Introduction to Mobile Development
 
 ## Objectifs
-- Public: Back JS + CSS + HTML
+- Public: JS + CSS + HTML
 - Temps de lecture: 1 semaine
 - Langue: Anglais
 - Style: Laid back
