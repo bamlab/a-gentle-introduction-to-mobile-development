@@ -71,6 +71,11 @@ $ ionic run ios
 ```
 
 ### On a iOS simulator
+* If it is not installed you need to install
+```
+$ npm install ios-sim --save-dev
+```
+* You can then run:
 ```
 $ ionic emulate ios
 ```
