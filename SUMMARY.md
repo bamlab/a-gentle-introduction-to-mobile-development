@@ -2,5 +2,5 @@
 
 * [Introduction](README.md)
 * Ionic 2
-   * [Project Setup](project_setup.md)
+   * [Your first App](project_setup.md)
 
