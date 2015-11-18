@@ -1,4 +1,4 @@
-# Project Setup
+# Your first App
 
 ## Environment Setup
 
