@@ -7,20 +7,26 @@
 
 ## The Ionic.io Platform
 
-The Ionic.io platform offers a range of powerful, hybrid-focused mobile backend services and tools to make it easy to build beautiful, performant hybrid apps, at a rapid pace.
+* The Ionic.io platform offers a range of powerful, hybrid-focused mobile backend services and tools to make it easy to build beautiful, performant hybrid apps, at a rapid pace.
+* Example of Services:
+ * Analytics
+ * Deploy
+ * Push
 
 
 ### Create an Ionic Platform account 
-https://apps.ionic.io/apps
+* https://apps.ionic.io/apps
+
+### Install bower
 
 ```
 npm install -g bower
 ```
-
+### Add Ionic-platform-web-client
 ```
 ionic add ionic-platform-web-client
 ```
-
+### Initiate ionic io
 ```
 ionic io init
 ``` 
@@ -29,6 +35,3 @@ ionic io init
 * api_key
 
 ##Integrate a service
-* Analytics
-* Deploy
-* Push
