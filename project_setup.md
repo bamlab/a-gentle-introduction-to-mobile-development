@@ -79,4 +79,3 @@ $ npm install ios-sim --save-dev
 ```
 $ ionic emulate ios
 ```
-* LOL
