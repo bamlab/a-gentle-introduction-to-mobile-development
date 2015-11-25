@@ -50,7 +50,7 @@ $ cd ~/[my]/[projects]/[dir]
 
 * Create your application
 ```
-$ ionic start myFirstApp
+$ ionic start myFirstApp --v2
 $ cd myFirstApp
 ```
 
