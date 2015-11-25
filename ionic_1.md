@@ -5,7 +5,7 @@
 http://ionicframework.com/docs/v2/getting-started/tutorial/
 http://docs.ionic.io/v1.0/docs/io-quick-start
 
-## Ionic Platform
+## The Ionic.io Platform
 
 Create an Ionic Platform account to add these features to your app?
 (Y/n): Y
