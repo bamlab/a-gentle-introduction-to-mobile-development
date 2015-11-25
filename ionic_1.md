@@ -8,7 +8,7 @@
 ## The Ionic.io Platform
 
 * The Ionic.io platform offers a range of powerful, hybrid-focused mobile backend services and tools to make it easy to build beautiful, performant hybrid apps, at a rapid pace.
-* Example of Services:
+* Example of availabel Services:
  * Analytics
  * Deploy
  * Push
