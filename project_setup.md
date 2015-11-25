@@ -61,6 +61,11 @@ $ ionic platform add ios
 ```
 
 ## Running the App
+
+### In the browser
+```
+$ ionic serve
+```
 ### On Android
 ```
 $ ionic run android
