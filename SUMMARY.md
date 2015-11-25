@@ -6,4 +6,4 @@
    * [Ionic Tools](ionic/ionic_2.md)
    * [The Ionic.io Platform](ionic/ionic_3.md)
 * [Tests](tests_setup.md)
-   * [Set up your environment for testing](test_setup.md)
+   * [Set up your environment for testing](tests_setup.md)
