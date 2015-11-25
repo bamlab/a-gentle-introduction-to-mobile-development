@@ -20,7 +20,7 @@ ionic io init
 app_id
 api_key
 
-Integrate a service
-Analytics
-Deploy
-Push
+##Integrate a service
+* Analytics
+* Deploy
+* Push
