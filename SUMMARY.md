@@ -2,7 +2,8 @@
 
 * [Introduction](README.md)
 * Ionic 2
-   * [Your first App](project_setup.md)
-   * [The Ionic.io Platform](Ionic2/ionicplatform.md)
-   * [Ionic Tools](Ionic2/ionic_tools.md)
+   * [Your first App](ionic/ionic_1.md)
+   * [Ionic Tools](ionic/ionic_2.md)
+   * [The Ionic.io Platform](ionic/ionic_3.md)
+
 
