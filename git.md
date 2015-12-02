@@ -6,15 +6,11 @@ It also gives you a lot of vital features for professional programming.
 ## What is Git ?
 
 Git in a Vesion Control System (CVS). Its job is to save every small change in your code.
-Every change is saved in a new revision of the application. A version contains a verison number, the author of the change and the date.
+Every change is saved in a new revision of the application. A version contains a version number, the author of the change and the date.
 
-Git allows you to go switch between revision, merge two diferents, go back in the history of your application, set label, ...
+Git allows you to go switch between revision, merge two different, go back in the history of your application, set label, ...
 
-
-give example ...
-
-
-
+For example, you can make changes at a revision 1 to create a revision 2. At any moment, you can go back to revision 1. If another member of you team create a revision 2b from the revision 1, you can merge it with your revision 2. You will create a version 3 which contains the change in revision 2 and 2b.
 
 ## The basics
 
@@ -56,7 +52,44 @@ To see which files have been modified and which file have been added you can use
 ```bash
 git status
 ```
-
+Then, you can create the commit :
 ```bash
 git commit [-m <msg>]
 ```
+
+### Sharing with people
+
+Your first commit have been created, but you didn't send your changes to your teammate. To do so, you need to "push" your changes on the server.
+```besh
+git push
+```
+Now, you should see your commit on the github interface.
+
+The reverse command of `push` is `pull`. If some made changes on the server and you want get it, you'll need to use the command :
+```bash
+git pull
+```
+Try it after editing a file in the github interface.
+
+
+There is some special condition for pulling and pushing on the server. You can push only if you have the same commits as the server with some more.
+If you try to push a commit and someone else just did the same, you will have an error. The reason is, there is a commit on the server than you don't have on your local machine.
+
+The only way to push your commit is to pull first. Git will merge your local changes to the remote ones. A new commit will be created to regroup everything.
+Now you can push without problem.
+
+The way `git` merge all the changes is very smart. But there is a situation that it can resolve alone. It happen when you and your teammate have changed the same line of the same file. Git cannot choose what modification it need to take and will create a conflict.
+
+```bash
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+Automatic merge failed; fix conflicts and then commit the result.
+```
+
+You need now to resolve manually all the conflict. To do so, you can use the following command :
+```bash
+git mergetool
+```
+
+
+
