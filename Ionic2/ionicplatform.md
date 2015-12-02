@@ -1,10 +1,7 @@
 # The Ionic.io Platform
 
-# Useful Ionic Tools
-
 ## Useful links
 
-* http://ionicframework.com/docs/v2/getting-started/tutorial/
 * http://docs.ionic.io/v1.0/docs/io-quick-start
 
 ## The Ionic.io Platform
