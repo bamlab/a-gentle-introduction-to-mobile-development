@@ -30,7 +30,7 @@ ionic add ionic-platform-web-client
 ```
 ionic io init
 ``` 
-* This will generate:
+* This will generate your:
  * app_id
  * api_key
 
