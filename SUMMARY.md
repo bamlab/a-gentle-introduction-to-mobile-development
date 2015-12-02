@@ -6,4 +6,3 @@
    * [Ionic Tools](ionic/ionic_2.md)
    * [The Ionic.io Platform](ionic/ionic_3.md)
 
-
