@@ -1,6 +1,6 @@
 # Continuous Integration
 
-Once you have tests in your projects, you may want to automatically run them at any time a change is pushed by a developer. Continuous Integration goal is to run these automated tests and even launch an automated build of your project.
+Once you have your tests setup in your projects, you may want to automatically run them at any time a change is pushed by a developer. Continuous Integration's goal is to run these automated tests and even launch an automated build of your project.
 
 ## Setting up CircleCI
 
@@ -16,13 +16,13 @@ Go to https://circleci.com/ noob.
 
 ### Enjoy the builds
 
-CircleCI will try to infere most settings that you need. For projects using *Node.js* and *npm*, it will launch `npm install` and then `run test`.
+CircleCI will try to infer most of the settings that you need. For projects using *Node.js* and *npm*, it will launch `npm install` and then run `npm test`.
 
-Anytime you push a new commit/branch to your git repository, CircleCI will launch a new build. By default, you're notified by mail if something went wrong.
+Anytime you push a new commit/branch to your git repository, CircleCI will launch a new build. By default, you will be notified by mail if something went wrong.
 
 ## Customize the settings with `circle.yml`
 
-Most of the time, the settings infered by CircleCI aren't adapted to your project. You may want to run a particular script before installing dependencies or install fixtures if you're testing a backend.  
+Most of the time, the settings inferred by CircleCI aren't adapted to your project. You may want to run a particular script before installing dependencies or install fixtures if you're testing a backend.  
 
 These settings can be added and changed in a configuration file called `circle.yml`, stored at the root of your repository.
 
@@ -52,6 +52,6 @@ CircleCi exposes a few *environment variables* (like `$CIRCLE_TEST_REPORTS` here
 
 ## Others services
 
-CircleCI is only amongst the different providers of Continuous Integration as a service. We chose it because it was easy to set up and free to try. You can also try [Travis-CI](https://travis-ci.org/) which is free for open source projects.
+CircleCI is only one of the many providers to offer Continuous Integration as a service. We chose it because it was easy to set up and free to try. You can also try [Travis-CI](https://travis-ci.org/) which is free for open source projects.
 
 In any case, be sure to read the docs if you're missing something.
