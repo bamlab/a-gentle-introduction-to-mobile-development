@@ -20,13 +20,13 @@ CircleCI will try to infere most settings that you need. For projects using *Nod
 
 Anytime you push a new commit/branch to your git repository, CircleCI will launch a new build. By default, you're notified by mail if something went wrong.
 
-### Override the settings with `circle.yml`
+## Customize the settings with `circle.yml`
 
 Most of the time, the settings infered by CircleCI aren't adapted to your project. You may want to run a particular script before installing dependencies or install fixtures if you're testing a backend.  
 
 These settings can be added and changed in a configuration file called `circle.yml`, stored at the root of your repository.
 
-#### Example 1: using a different Node version
+### Example 1: using a different Node version
 
 If your project is using a particular version of Node, you can ask CircleCI to use it:
 
@@ -36,6 +36,22 @@ machine:
     version: 4.1.0
 ```
 
-#### Example 2: TODO
+### Example 2: Customize how your tests are run and reported
+
+You can also change entire section of the build, and replace the way tests are run.
+
+```yaml
+test:
+  override:
+    - MOCHA_FILE=$CIRCLE_TEST_REPORTS/unit.xml npm run test:unit -- --reporter mocha-junit-reporter
+```
+
+In this example, we're replacing the test run command by a new one that reports the result in a file.
+CircleCi exposes a few *environment variables* (like `$CIRCLE_TEST_REPORTS` here): the full list is in the [CircleCI documentation](https://circleci.com/docs).
 
 
+## Others services
+
+CircleCI is only amongst the different providers of Continuous Integration as a service. We chose it because it was easy to set up and free to try. You can also try [Travis-CI](https://travis-ci.org/) which is free for open source projects.
+
+In any case, be sure to read the docs if you're missing something.
