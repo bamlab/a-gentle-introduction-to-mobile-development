@@ -4,4 +4,5 @@
 * Ionic 2
    * [Your first App](project_setup.md)
    * [The Ionic.io Platform](ionic_platform.md)
+   * Ionic Tools
 
