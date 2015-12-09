@@ -6,12 +6,12 @@
 
 * Install Java and JDK
 
-* Install brew 
+* Install brew
 ```
 $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-* Install the android sdk 
+* Install the android sdk
 ```
 $ brew install android-sdk
 $ android sdk
@@ -50,7 +50,7 @@ $ cd ~/[my]/[projects]/[dir]
 
 * Create your application
 ```
-$ ionic start myFirstApp
+$ ionic start myFirstApp --v2
 $ cd myFirstApp
 ```
 
@@ -61,6 +61,11 @@ $ ionic platform add ios
 ```
 
 ## Running the App
+
+### In the browser
+```
+$ ionic serve
+```
 ### On Android
 ```
 $ ionic run android
@@ -79,4 +84,3 @@ $ npm install ios-sim --save-dev
 ```
 $ ionic emulate ios
 ```
-* LOL

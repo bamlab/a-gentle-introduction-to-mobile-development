@@ -90,6 +90,3 @@ You need now to resolve manually all the conflict. To do so, you can use the fol
 ```bash
 git mergetool
 ```
-
-
-
