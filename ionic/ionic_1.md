@@ -6,12 +6,12 @@
 
 * Install Java and JDK
 
-* Install brew 
+* Install brew
 ```
 $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-* Install the android sdk 
+* Install the android sdk
 ```
 $ brew install android-sdk
 $ android sdk

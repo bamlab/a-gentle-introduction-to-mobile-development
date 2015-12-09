@@ -8,4 +8,4 @@ The bulk of our app lives inside the ``www`` folder
 
 ### www/index.html
 
-``www/index.html`` is the main entry point for the app. 
+``www/index.html`` is the main entry point for the app.
