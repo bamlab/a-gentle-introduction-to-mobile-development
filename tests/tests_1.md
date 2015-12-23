@@ -4,7 +4,7 @@
 
 To install the libraries for unit testing, paste this in your terminal:
 
-````shell
+```shell
 npm install --save-dev karma karma-chrome-launcher karma-junit-reporter \
 karma-mocha karma-mocha-reporter karma-phantomjs-launcher karma-sinon-chai \
 chai mocha sinon karma-coffee-preprocessor karma-chai karma-sinon
@@ -24,7 +24,7 @@ module.exports = function(config) {
         'www/lib/**/*.js',
         // and your tests (here tests are the files that are in 'test'
         // folder and finish by .spec.js), e.g.
-        'test/**/*.spec.js', 
+        'test/**/*.spec.js',
     ],
     exclude: [],
     reporters: ['progress'],
