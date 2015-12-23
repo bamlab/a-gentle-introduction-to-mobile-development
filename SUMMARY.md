@@ -14,3 +14,4 @@
    * [The Ionic.io Platform](ionic/ionic_3.md)
 * [Tests](tests_setup.md)
    * [Set up your environment for testing](tests/tests_1.md)
+* [GLOSSARY](GLOSSARY.md)
