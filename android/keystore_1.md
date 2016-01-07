@@ -1,6 +1,8 @@
 # Android Keystore
 
-## Introduction on the keystores
+Your app is ready and you want to get it to your clients. In order to do so, you need to sign your app: for Android this is done using keystores.
+
+## Introduction to keystores
 
 Keystores are files containing security certificates and are primarily used to
 sign Android APK files. Usually you'll manage a single keystore that is used for
@@ -11,10 +13,9 @@ Android SDK. You can check its location:
 ls $HOME/.android/debug.keystore
 ```
 
-If the keystore is not existing, check that you have installed the Android SDK.
+If the keystore doesn't exist, check that you have installed the Android SDK.
 
-Keystores can be **password protected**: when it's the case, you'll be prompted for
-the password when you want to use it to sign your app.
+Keystores can be **password protected**: you'll be prompted for the password when you sign your app.
 
 ## Create a release keystore
 
@@ -22,6 +23,9 @@ the password when you want to use it to sign your app.
 keytool -genkey -v -keystore my-release-key.keystore
 -alias alias_name -keyalg RSA -keysize 2048 -validity 10000
 ```
+
+Replace *my-release-key.keystore* with the name you want for your keystore, for example *my-awesome-todo-app.keystore*.
+
 You'll be asked for you for passwords for the keystore and key. You can enter
 the same password for both.
 
@@ -48,7 +52,11 @@ You're done! You can send this APK to the Google Play store.
 
 Keystore must be saved and **never lost**: if you lose a keystore, you won't be able
 to sign your app and release new versions on the Google Play store. In the same
-way, anyone that get access to the keystore (and its password) can use it to sign
+way, anyone that gets access to the keystore (and its password) can use it to sign
 its own application as it if were your app.
 
-It's a good idea to never put the keystore in your git repository.
+It's a good idea to never put the keystore in your git repository. You can do this by adding to your .gitignore:
+
+```
+*.keystore
+```
