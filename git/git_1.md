@@ -78,6 +78,8 @@ If you try to push a commit and someone else just did the same, you will have an
 The only way to push your commit is to pull first. Git will merge your local changes to the remote ones. A new commit will be created to regroup everything.
 Now you can push without problem.
 
+### Resovling Conflicts
+
 The way `git` merge all the changes is very smart. But there is a situation that it can resolve alone. It happen when you and your teammate have changed the same line of the same file. Git cannot choose what modification it need to take and will create a conflict.
 
 ```bash
@@ -90,3 +92,54 @@ You need now to resolve manually all the conflict. To do so, you can use the fol
 ```bash
 git mergetool
 ```
+
+This command should open a software to help you to resolve the conflict. If you don't have one, I recommand you to install `opendiff` for MACOS or `meld` for Ubuntu.
+
+### Using Branches 
+
+One of the most powerfull tool to git is the branch system. A branch is like a copy of your project. The default one is named `master`.
+
+Let's create a new branch : 
+```
+$ git checkout -b "my-new-branch"
+```
+
+Now you have 2 branches and you have switched to the `my-new-branch` branch:
+```
+$ git branch
+  master
+* my-new-branch
+```
+
+Now everything happen like if you have 2 folder with two copy of your project. You can make any change in `my-new-branch` without affecting the master branch.
+
+For example if we create a new commit :
+```
+echo "Made in a new branch" >> README.md
+git add README.md
+git commit -m "A commit made in the my-new-branch branch"
+```
+
+We can see it with `git log` : 
+```
+$ git log --oneline | cat
+9133367 A commit made in the my-new-branch branch
+5d77249 Initial commit
+```
+
+But if I switch to the `master` branch :
+```
+$ git checkout master
+$ git branch
+* master
+  my-new-branch
+```
+
+I don't see my commit anymore :
+```
+$ git log --oneline | cat
+5d77249 Initial commit
+```
+
+
+
