@@ -7,3 +7,5 @@
   * [The Ionic.io Platform](ionic/ionic_3.md)
 * Continuous Integration
   * [Setting up your project with CircleCI](ci/ci_1.md)
+* Android
+  * [Keystore and application signing](android/keystore_1.md)
