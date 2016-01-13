@@ -75,6 +75,8 @@ $ ionic run android
 $ ionic run ios
 ```
 
+For some tips and tricks on running the app on device, be sure to check [Running on device](ionic_1_1.md)
+
 ### On a iOS simulator
 * If it is not installed you need to install
 ```
