@@ -5,7 +5,7 @@ It also gives you a lot of vital features for professional programming.
 
 ## What is Git ?
 
-Git in a Vesion Control System (CVS). Its job is to save every small change in your code.
+Git in a Version Control System (VCS). Its job is to save every small change in your code.
 Every change is saved in a new revision of the application. A version contains a version number, the author of the change and the date.
 
 Git allows you to go switch between revision, merge two different, go back in the history of your application, set label, ...
@@ -60,7 +60,7 @@ git commit [-m <msg>]
 ### Sharing with people
 
 Your first commit have been created, but you didn't send your changes to your teammate. To do so, you need to "push" your changes on the server.
-```besh
+```bash
 git push
 ```
 Now, you should see your commit on the github interface.
@@ -122,7 +122,7 @@ git commit -m "A commit made in the my-new-branch branch"
 
 We can see it with `git log` : 
 ```
-$ git log --oneline | cat
+$ git log --oneline
 9133367 A commit made in the my-new-branch branch
 5d77249 Initial commit
 ```
@@ -141,5 +141,41 @@ $ git log --oneline | cat
 5d77249 Initial commit
 ```
 
+When you have finished your work in a new branch, you can merge it with the rest of the code with `git merge`. The command will create a new commit if needed. Let's see an example : 
+
+After the previous steps, I have two commit on `my-new-branch` and one commit in master. I create a new commit in master :
+```
+git co master
+echo "console.log('foobar');" >> newFile.js
+git add newFile.js
+git commit -m "Adding the newFile script"
+```
+
+I can now see it :
+
+```
+$ git log --oneline
+187632d Adding the newFile script
+5d77249 Initial commit
+```
+
+Now I merge the other branch :
+```
+$ git merge my-new-branch
+Merge made by the 'recursive' strategy.
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+```
+
+I can see a summary of what happened with `git log --graph`.
+```bash
+$ git log --graph --oneline
+*   6882170 Merge branch 'my-new-branch'
+|\
+| * 9133367 A commit made in the my-new-branch branch
+* | 187632d Adding the newFile script
+|/
+* 5d77249 Initial commit
+```
 
 
