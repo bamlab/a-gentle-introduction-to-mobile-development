@@ -5,7 +5,7 @@ It also gives you a lot of vital features for professional programming.
 
 ## What is Git ?
 
-Git in a Version Control System (VCS). Its job is to save every small change in your code.
+Git is a Version Control System (VCS). Its job is to save every small change in your code.
 Every change is saved in a new revision of the application. A version contains a version number, the author of the change and the date.
 
 Git allows you to go switch between revision, merge two different, go back in the history of your application, set label, ...
