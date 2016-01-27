@@ -177,4 +177,21 @@ $ git log --graph --oneline
 * 5d77249 Initial commit
 ```
 
+The two commit was seperated in two diferent timeline. Now a new commit have been created to merge everything in the master branch.
 
+
+### The standard git flow
+
+When you work alone on a side project, you often don't need to use the branch system. Working in the master branch is enought.
+
+Things begin to be harder as soon as you are working on a web application which is in production. Imagine the following scenario : 
+1. You made change in your codebase and push it in the server
+2. You begin the following feature
+3. A critical bug occured on the server
+
+You cannot fix the bug without sending your incomplete works on the new feature in the server. The solution to that problem is to have, a least, a separate branch for each server you have. The branch must be always synchronized with the server to always be able to accept hotfixes.
+
+To solve all that kind of problem, there is a standard git flow used in most of the projects. This is a way to organize your branch in a team. gthe schema of the flow is visible in the figure 1.
+
+
+![Git Flow](/img/gitflow.png "The Standard git flow")
