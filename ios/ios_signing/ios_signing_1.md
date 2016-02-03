@@ -4,7 +4,7 @@ In the following chapter we will consider that you already own a valid Apple Dev
 
 ## What are certificates?
 
-Apple Provisioning Profiles are keys allowing you to sign your application for release. It is used by to verify that the person who is trying to publish a version of the application is its owner and the owner of the provisioning profile.
+Apple Certificates are keys allowing you to sign your application for release. It is used by to verify that the person who is trying to publish a version of the application is its owner and the owner of the provisioning profile.
 
 ## What are provisioning profiles?
 
