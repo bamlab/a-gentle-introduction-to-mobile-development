@@ -15,3 +15,5 @@
   * Signing
     * [Apple Certificates and Provisioning Profiles](ios/ios_signing/ios_signing_1.md)
     * [Step 1: Certificates](ios/ios_signing/ios_signing_2.md)
+* Android
+ * [Keystore and application signing](android/keystore_1.md)

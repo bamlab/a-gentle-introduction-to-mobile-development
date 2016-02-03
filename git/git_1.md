@@ -5,7 +5,7 @@ It also gives you a lot of vital features for professional programming.
 
 ## What is Git ?
 
-Git in a Vesion Control System (CVS). Its job is to save every small change in your code.
+Git is a Version Control System (VCS). Its job is to save every small change in your code.
 Every change is saved in a new revision of the application. A version contains a version number, the author of the change and the date.
 
 Git allows you to go switch between revision, merge two different, go back in the history of your application, set label, ...
@@ -16,7 +16,7 @@ For example, you can make changes at a revision 1 to create a revision 2. At any
 
 ### Installation
 
-Mac : `brew install git`
+Mac: `brew install git`
 Ubuntu: `sudo apt-get install git`
 
 ### Your first commit
@@ -36,9 +36,9 @@ cd your-project-name
 echo "## Author\nThe Awesome `whoami`" >> README.md
 ```
 To save this change and share it with others, you need to make a new commit.
-A commit is a new version of your application. It saves the change you made until the last one.
+A commit is a new version of your application. It contains the changes made since the last commit.
 
-The first thing to do, is to choose what files we want to save in the next commit. It could be done with the `add` command:
+The first thing to do, is to choose what files we want to save in the next commit. It can be done with the `add` command:
 ```bash
 git add [--verbose | -v] [<pathspec>...]
 ```
@@ -52,7 +52,7 @@ To see which files have been modified and which file have been added you can use
 ```bash
 git status
 ```
-Then, you can create the commit :
+Then, you can create the commit:
 ```bash
 git commit [-m <msg>]
 ```
@@ -60,25 +60,27 @@ git commit [-m <msg>]
 ### Sharing with people
 
 Your first commit have been created, but you didn't send your changes to your teammate. To do so, you need to "push" your changes on the server.
-```besh
+```bash
 git push
 ```
 Now, you should see your commit on the github interface.
 
-The reverse command of `push` is `pull`. If some made changes on the server and you want get it, you'll need to use the command :
+The reverse command of `push` is `pull`.  If someone made change and pushed them to the server and you want get it, you'll need to use the command:
 ```bash
 git pull
 ```
 Try it after editing a file in the github interface.
 
 
-There is some special condition for pulling and pushing on the server. You can push only if you have the same commits as the server with some more.
+One condition must be fulfilled to push to the server repository. You can push only if you have the same commits as the server with some more.
 If you try to push a commit and someone else just did the same, you will have an error. The reason is, there is a commit on the server than you don't have on your local machine.
 
-The only way to push your commit is to pull first. Git will merge your local changes to the remote ones. A new commit will be created to regroup everything.
+The only way to push your commit is to pull first. Git will merge your local changes with the remote ones. A new commit will be created to regroup everything.
 Now you can push without problem.
 
-The way `git` merge all the changes is very smart. But there is a situation that it can resolve alone. It happen when you and your teammate have changed the same line of the same file. Git cannot choose what modification it need to take and will create a conflict.
+### Resolving Conflicts
+
+The way `git` merge all the changes is very smart. But there is a situation that it cannot resolve alone. It happen when you and your teammate have changed the same line of the same file. Git cannot choose what modification it need to take and will create a conflict.
 
 ```bash
 Auto-merging README.md
@@ -86,7 +88,93 @@ CONFLICT (content): Merge conflict in README.md
 Automatic merge failed; fix conflicts and then commit the result.
 ```
 
-You need now to resolve manually all the conflict. To do so, you can use the following command :
+You need now to resolve manually all the conflict. To do so, you can use the following command:
 ```bash
 git mergetool
 ```
+
+This command should open a software to help you to resolve the conflict. If you don't have one, I recommend you to install `opendiff` for MACOS or `meld` for Ubuntu.
+
+### Using Branches 
+
+One of the most powerful tool to git is the branch system. A branch is like a copy of your project. The default one is named `master`.
+
+Let's create a new branch: 
+```bash
+$ git checkout -b "my-new-branch"
+```
+
+Now you have 2 branches and you have switched to the `my-new-branch` branch:
+```bash
+$ git branch
+  master
+* my-new-branch
+```
+
+Now everything happen as if you have 2 folder with two copy of your project. You can make any change in `my-new-branch` without affecting the master branch.
+
+For example if we create a new commit:
+```
+echo "Made in a new branch" >> README.md
+git add README.md
+git commit -m "A commit made in the my-new-branch branch"
+```
+
+We can see it with `git log`: 
+```bash
+$ git log --oneline
+9133367 A commit made in the my-new-branch branch
+5d77249 Initial commit
+```
+
+But if I switch to the `master` branch:
+```bash
+$ git checkout master
+$ git branch
+* master
+  my-new-branch
+```
+
+I don't see my commit anymore:
+```bash
+$ git log --oneline | cat
+5d77249 Initial commit
+```
+
+When you have finished your work in a new branch, you can merge it with the rest of the code with `git merge`. The command will create a new commit if needed. Let's see an example: 
+
+After the previous steps, I have two commit on `my-new-branch` and one commit in master. I create a new commit in master:
+```
+git co master
+echo "console.log('foobar');" >> newFile.js
+git add newFile.js
+git commit -m "Adding the newFile script"
+```
+
+I can now see it:
+```bash
+$ git log --oneline
+187632d Adding the newFile script
+5d77249 Initial commit
+```
+
+Now I merge the other branch:
+```bash
+$ git merge my-new-branch
+Merge made by the 'recursive' strategy.
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+```
+
+I can see a summary of what happened with `git log --graph`.
+```bash
+$ git log --graph --oneline
+*   6882170 Merge branch 'my-new-branch'
+|\
+| * 9133367 A commit made in the my-new-branch branch
+* | 187632d Adding the newFile script
+|/
+* 5d77249 Initial commit
+```
+
+
