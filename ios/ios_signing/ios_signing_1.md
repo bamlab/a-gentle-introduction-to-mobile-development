@@ -12,6 +12,6 @@ A provisioning profile is the key used to sign your application. It is linked to
 
 ## A bit about security
 
-Both certificates and provisioning profiles exist to enforce security and ownership of every application available on the Apple Store. This is why it is utterly important to ensure that both (especially the certificates) are stored in a safe location and shared only with the core members of your team.
+Both certificates and provisioning profiles exist to enforce security and ownership of every application available on the Apple Store. While the Provisioning Profile can be committed without any worries, it is utterly important to ensure that the certificates are stored in a safe location and shared only with the core members of your team.
 
 Having your certificate and provisioning profile stolen can lead to someone stealing your identity and publishing an application which will be regarded by the Apple Store as yours.
