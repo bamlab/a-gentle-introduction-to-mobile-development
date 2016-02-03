@@ -79,3 +79,5 @@ describe('fibonacci function', function() {
 	});
 });
 ```
+
+Now you can launch the tests as explained in the previous chapter by typing `npm test` in your project directory!
