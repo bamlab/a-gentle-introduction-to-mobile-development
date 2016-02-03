@@ -41,7 +41,7 @@ module.exports = function(config) {
 Add in your `package.json` in `scripts`section:
 
 ```
-"test": "./node_modules/karma/bin/karma start test/karma.conf.js --single-run",
+"test": "./node_modules/karma/bin/karma start test/karma.conf.js --single-run"
 ```
 
 # Run your first test
