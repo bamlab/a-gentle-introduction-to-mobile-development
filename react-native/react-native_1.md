@@ -2,7 +2,7 @@
 
 *React Native* is a framework developed by Facebook enabling to create applications for iOS and Android based on *React* and Javascript.
 
-Compared to the approach of Cordova, in which the application is running inside a full-fledged browser, React Native use the native components of the platform for your app. For both platform, your Javascript app is executed by *JavaScript Core*. React Native expose the components of the platform as well as APIs (which are usually close to the one existing in browser).
+Compared to the approach of Cordova, in which the application is running inside a full-fledged browser, React Native uses the native components of the platform for your app. For both platform, your Javascript app is executed by *JavaScript Core*. React Native expose the components of the platform as well as APIs (which are usually close to the one existing in browser).
 
 This approach allow to have applications with a *native look'n'feel* while keeping a fast development pace without having to rewrite the app for two OSes. *Performance* is also very good because the UI is entirely handled by the OS and Javascript is run is its own thread.
 
@@ -18,7 +18,7 @@ A few comments on the way React Native works:
 
   * React native is bundled with a packager. You don't need to install *webpack* or a task runner like *gulp* or *grunt*.
 
-  * *Babel* is used to let you use ES6. It's a good habit to write your app using the latest JavaScript standard.
+  * *Babel* is used to let you use ES2016. It's a good habit to write your app using the latest JavaScript standard.
 
 ## Launch your app
 
