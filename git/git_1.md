@@ -95,11 +95,11 @@ git mergetool
 
 This command should open a software to help you to resolve the conflict. If you don't have one, I recommend you to install `opendiff` for MACOS or `meld` for Ubuntu.
 
-### Using Branches 
+### Using Branches
 
 One of the most powerful tool to git is the branch system. A branch is like a copy of your project. The default one is named `master`.
 
-Let's create a new branch: 
+Let's create a new branch:
 ```bash
 $ git checkout -b "my-new-branch"
 ```
@@ -120,7 +120,7 @@ git add README.md
 git commit -m "A commit made in the my-new-branch branch"
 ```
 
-We can see it with `git log`: 
+We can see it with `git log`:
 ```bash
 $ git log --oneline
 9133367 A commit made in the my-new-branch branch
@@ -141,7 +141,7 @@ $ git log --oneline | cat
 5d77249 Initial commit
 ```
 
-When you have finished your work in a new branch, you can merge it with the rest of the code with `git merge`. The command will create a new commit if needed. Let's see an example: 
+When you have finished your work in a new branch, you can merge it with the rest of the code with `git merge`. The command will create a new commit if needed. Let's see an example:
 
 After the previous steps, I have two commit on `my-new-branch` and one commit in master. I create a new commit in master:
 ```
@@ -177,37 +177,35 @@ $ git log --graph --oneline
 * 5d77249 Initial commit
 ```
 
-The two commit was seperated in two diferent timeline. Now a new commit have been created to merge everything in the master branch.
+The two commits were separated in two different timelines. Now a new commit has been created to merge everything in the master branch.
 
 
 ### The standard git flow
 
-When you work alone on a side project, you often don't need to use the branch system. Working in the master branch is enought.
+When you work alone on a side project, you often don't need to use the branch system. Working in the master branch is enough.
 
-Things begin to be harder as soon as you are working on a web application which is in production. Imagine the following scenario : 
-1. You made change in your codebase and push it in the server
-2. You begin the following feature
-3. A critical bug occured on the server
+Things begin to get harder as soon as you are working on a web application which is in production. Imagine the following scenario:
+1. You made changes in your codebase and pushed it to the server
+2. You begin to implement the next feature
+3. A critical bug occurred on the server
 
-You cannot fix the bug without sending your incomplete works on the new feature in the server. The solution to that problem is to have, a least, a separate branch for each server you have. The branch must be always synchronized with the server to always be able to accept hotfixes.
+You cannot fix the bug without sending your incomplete work on the new feature in the server. The solution to that problem is to have, at least, a separate branch for each server you have. The branch must always be synchronized with the server to always be able to accept hotfixes.
 
 To solve all that kind of problem, there is a standard git flow used in most of the projects. This is a way to organize your branch in a team. The schema of the flow is visible in the figure below.
 
 ![Git Flow](/img/gitflow.png "The Standard git flow")
 
-The different branches are :
-* `master` : Master is the branch which is always synchronized with the production server, or the last release of the project. This is the last version available for the final users.
-* `hotfix/*` : The hotfix branches allow you to make critical bug fix in the production. Everytime you have a bug which must be resolved very fast, you can create a new branch `hotfix/name-of-the-bug` and merge it to master as soon as the problem is solved.
-* `develop` : Develop is the must updated branch used by the developpers. It contains all the finished features which have not been released yet. This branch must be always up to date with master.
-* `release` : Release contains all the feature which will be merged soon for the customers. This is the best place to make final user tests.
-* `feature/*` : Feature branches are the branches where the developpers are working. 
+The different branches are:
+* `master`: Master is the branch which is always synchronized with the production server, or the last release of the project. This is the last version available for the final users.
+* `hotfix/*`: The hotfix branches allow you to make critical bug fix in the production. Every time you have a bug which must be resolved very fast, you can create a new branch `hotfix/name-of-the-bug` and merge it to master as soon as the problem is solved.
+* `develop`: Develop is the must updated branch used by the developers. It contains all the finished features which have not been released yet. This branch must be always up to date with master.
+* `release`: Release contains all the feature which will be merged soon for the customers. This is the best place to make final user tests.
+* `feature/*`: Feature branches are the branches where the developers are working.
 
-For each new feature to create, the developper create a new `feature/name-of-the-feature` from `develop`. Next he made all his developpement in this new branch. If the priority changes, he can switch from a feature branch to another.
+For each new feature to create, the developer creates a new `feature/name-of-the-feature` starting from `develop`. Next he makes all his development in this new branch. If the priority changes, he can switch from a feature branch to another.
 
-As soon he finished his feature, he can merge it in `develop` (after optionnaly a code review). His code is now shared with the other developpers. To avoid bugs and conflicts, it is recommanded to do it often.
+As soon as he finishes his feature, he can merge it in `develop` (after optionally a code review). His code is now shared with the other developers. To avoid bugs and conflicts, it is recommended to do it often.
 
-As soon as you have enouth feature to make its available for your users, you can merge your `develop` branch into `release`. Release is now tested by everyone to be sure that there are no bugs which will be deployed in production. When all check passed, you can merge it into `master`.
+As soon as you have enough features to make them available to your users, you can merge your `develop` branch into `release`. Release is now tested by everyone to be sure that no bugs will be deployed in production. When all checks passed, you can merge it into `master`.
 
-It is very important that the code tested into `release` is the same that will be in master after the merge. If some parts are removed from the release because of bugs, you must check again. The testing environement must also the same as the final user ones.
-
-
+It is very important that the code tested into `release` is the same that will be in master after the merge. If some parts are removed from the release because of bugs, you must check again. The testing environment must also be the same as the final user ones.
