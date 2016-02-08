@@ -41,6 +41,8 @@ To automatically have a version of Node.js ready when you open your terminal, yo
 nvm alias default 4.2.1
 ```
 
+To check that the default node version is now the one you selected, launch a new terminal and just run `node -v`.
+
 Checkout [the NVM docs](https://github.com/creationix/nvm/blob/master/README.markdown) for more information!
 
 ## AVN

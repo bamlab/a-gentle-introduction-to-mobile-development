@@ -1,6 +1,6 @@
 # Setup your environment
 
-* Install the latest version of XCode (dans l'apple Store ou ici https://developer.apple.com/xcode/downloads/)
+* Install the latest version of XCode (in the AppStore or https://developer.apple.com/xcode/downloads/)
 
 * Install Java and JDK
 
