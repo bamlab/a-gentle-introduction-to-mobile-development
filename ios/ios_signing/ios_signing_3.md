@@ -1,4 +1,4 @@
-## Step 2: App IDs
+# Step 2: App IDs
 
 ## What is an App ID?
 
