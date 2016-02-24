@@ -1,54 +1,7 @@
 # A Gentle Introduction to Mobile Development
 
-## Objectifs
-- Public: JS + CSS + HTML
-- Temps de lecture: 1 semaine
-- Langue: Anglais
-- Style: Laid back
-- Chaque boût de code expliqué
-- Indépendance des chapitres 
-- Le Bammer n'a pas de questions lors de la lecture
-- Kickstart project à la fin
-- Licence: CCANC
-- Taille finale ~300 pages
-- Code:
-	- Chemin du fichier
-	- Emplacement dans le fichier (ligne)
+This book will help you get a better understanding on how to create, publish and maintain your multiplatform mobile app.
 
-## Sujets
-- Publication Android
-- Publication iOS
-- Refactoring
-- Intégration Continue
-- Git
-- DevOps
-- Gulp
-- Hooks
-- Unit Tests
-- E2E Tests
-- Bonnes pratiques de design
-- Création et intégration de plugin Cordova
-- Debug
-- API
-- OAuth
-- Performances
-- Hybrid/Native [Advanced]
+This book was started after realizing that it is currently extremely difficult to find a unique and reliable source concerning multiplatform app development. So our aim with this book is to share with everyone the knowledge we have gathered regarding the creation of mobile applications.
 
-
-## Technos
-- TypeScript
-- Ionic
-- Cordova
-- Angular
-- Crosswalk
-- Npm
-- Bower
-- Gulp
-- CircleCI
-- Mocha + Sinon + Chai
-- Express
-- Sass
-
-## Annexes
-1. Setting the environment for Ionic
-2. Using Atom
+In the following chapters, not only will we talk about the technologies and coding but we also will also discuss the many processes and tools we use everyday in our projects to build better, faster, stronger apps.
