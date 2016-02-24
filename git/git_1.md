@@ -205,6 +205,6 @@ For each new feature to create, the developer creates a new `feature/name-of-the
 
 As soon as he finishes his feature, he can merge it in `develop` (after optionally a code review). His code is now shared with the other developers. To avoid bugs and conflicts, it is recommended to do it often.
 
-As soon as you have enough features to make them available to your users, you can merge your `develop` branch into `release`. Release is now tested by everyone to be sure that no bugs will be deployed in production. When all checks passed, you can merge it into `master`.
+When you have enough features to make them available to your users, you can merge your `develop` branch into `release`. Release is now tested by everyone to be sure that no bugs will be deployed in production. When all checks passed, you can merge it into `master`.
 
 It is very important that the code tested into `release` is the same that will be in master after the merge. If some parts are removed from the release because of bugs, you must check again. The testing environment must also be the same as the final user ones.
