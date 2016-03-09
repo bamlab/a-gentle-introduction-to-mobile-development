@@ -15,7 +15,7 @@ Moreover, this assumption is used by React to render the app. The core mechanism
 
 Finally, to ease the writing of `render` methods, React uses a specific syntax called `JSX`: you can write the components and nest them using a syntax very similar to HTML:
 
-```
+```js
 class MyComponent extends React.Component {
     render() {
         return <View>
