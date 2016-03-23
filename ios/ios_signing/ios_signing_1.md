@@ -1,5 +1,7 @@
 # Apple Certificates and Provisioning Profiles
 
+***Problem:*** How do you sign your iOS application for production?
+
 In the following chapter we will consider that you already own a valid Apple Developer account.
 
 ## What are certificates?

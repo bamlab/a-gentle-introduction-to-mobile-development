@@ -1,5 +1,7 @@
 # Setup NodeJS with NVM
 
+***Problem:*** How do I handle multiple versions of NodeJS?
+
 NVM (Node Version Manager) is a great tool that enables the user to switch between differents versions of Node.js
 
 ## Installation
@@ -60,8 +62,7 @@ automatically detect the change and use your installed version manager to
 switch to that version of node.
 
 What goes in your `.node-version` file? A
-[semver](http://semver.org/) version number corresponding to the version of Node.js that
-your project uses, for instance:
+[semver](http://semver.org/) version number corresponding to the version of Node.js that your project uses, for instance:
 
 ```bash
 # .node-version

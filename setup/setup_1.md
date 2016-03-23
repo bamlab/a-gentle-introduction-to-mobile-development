@@ -1,5 +1,7 @@
 # Setup your environment
 
+***Problem:*** What do I need to install be able to work?
+
 * Install the latest version of XCode (in the AppStore or https://developer.apple.com/xcode/downloads/)
 
 * Install Java and JDK

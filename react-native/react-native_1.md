@@ -1,5 +1,7 @@
 # Your first React Native app
 
+***Problem:*** How do I create a Native application running with javascript?
+
 *React Native* is a framework developed by Facebook enabling to create applications for iOS and Android based on *React* and Javascript.
 
 Compared to the approach of Cordova, in which the application is running inside a full-fledged browser, React Native uses the native components of the platform for your app. For both platform, your Javascript app is executed by *JavaScript Core*. React Native expose the components of the platform as well as APIs (which are usually close to the one existing in browser).

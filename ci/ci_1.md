@@ -1,5 +1,7 @@
 # Continuous Integration
 
+***Problem:*** How do I automatically make sure my tests work after modifying the code?
+
 Once you have your tests setup in your projects, you may want to automatically run them at any time a change is pushed by a developer. Continuous Integration's goal is to run these automated tests and even launch an automated build of your project.
 
 ## Setting up CircleCI

@@ -5,6 +5,8 @@ It also gives you a lot of vital features for professional programming.
 
 ## What is Git ?
 
+***Problem:*** How can I keep track of the changes made in the code?
+
 Git is a Version Control System (VCS). Its job is to save every small change in your code.
 Every change is saved in a new revision of the application. A version contains a version number, the author of the change and the date.
 
@@ -59,6 +61,8 @@ git commit [-m <msg>]
 
 ### Sharing with people
 
+***Problem:*** How can I share my code with others?
+
 Your first commit have been created, but you didn't send your changes to your teammate. To do so, you need to "push" your changes on the server.
 ```bash
 git push
@@ -80,6 +84,8 @@ Now you can push without problem.
 
 ### Resolving Conflicts
 
+***Problem:*** How do I handle code conflicts?
+
 The way `git` merge all the changes is very smart. But there is a situation that it cannot resolve alone. It happen when you and your teammate have changed the same line of the same file. Git cannot choose what modification it need to take and will create a conflict.
 
 ```bash
@@ -96,6 +102,8 @@ git mergetool
 This command should open a software to help you to resolve the conflict. If you don't have one, I recommend you to install `opendiff` for MACOS or `meld` for Ubuntu.
 
 ### Using Branches
+
+***Problem:*** How can I test out new feature without destroying my codebase?
 
 One of the most powerful tool to git is the branch system. A branch is like a copy of your project. The default one is named `master`.
 
@@ -180,6 +188,8 @@ $ git log --graph --oneline
 The two commits were separated in two different timeline. Now a new commit has been created to merge everything into the master branch.
 
 ### The standard git flow
+
+***Problem:*** How can multiple person work on the same project?
 
 When you work alone on a side project, you often don't need to use the branch system. Working in the master branch is enough.
 

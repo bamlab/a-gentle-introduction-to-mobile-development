@@ -1,5 +1,7 @@
 # Android Keystore
 
+***Problem:*** How do you sign your Android application for production?
+
 Your app is ready and you want to get it to your clients. In order to do so, you need to sign your app: for Android this is done using keystores.
 
 ## Introduction to keystores
