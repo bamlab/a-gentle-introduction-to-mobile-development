@@ -29,8 +29,4 @@ If you've followed the React Native getting started, you have a working project.
 
 To start developing, you can edit a few lines in `index.ios.js` or `index.android.js` and reload on your simulator (Cmd+R on an iPhone simulator). On devices, shake the device to open the *development menu*.
 
-## Create your first component
-
-React Native requires you to have an index.[os].js for each platform. But any other component can be written once.
-
-Components are written *the React way*.
+Congratulations, you just started your first React Native app! In the next chapter we're going to explain how React components are working. Then we'll put this in practice by creating a component for the app.
